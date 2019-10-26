@@ -11,4 +11,4 @@ allowing those with access an easy way to add, remove or modify commands the bot
 
 The bot polls the site, using the Rest API, for commands at set intervals, refreshing its internal memory of what commands exist.
 
-The request is made to `https://wo-bot.net/wp-json/wpbot/v1/commands`, which provides a JSON list of triggers and responses.
+The request is made to `https://wp-bot.net/wp-json/wpbot/v1/commands`, which provides a JSON list of triggers and responses.
