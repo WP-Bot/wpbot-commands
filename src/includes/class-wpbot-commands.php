@@ -15,14 +15,17 @@ class WPBot_Commands {
 		register_post_type(
 			'wpbot_commands',
 			array(
-				'labels'      => array(
+				'labels'       => array(
 					'name'          => __( 'Commands', 'wpbot-commands' ),
 					'singular_name' => __( 'Command', 'wpbot-commands' )
 				),
-				'public'      => true,
-				'has_archive' => true,
-				'menu_icon'   => 'dashicons-leftright',
-
+				'public'       => true,
+				'has_archive'  => true,
+				'show_in_rest' => true,
+				'menu_icon'    => 'dashicons-leftright',
+				'rewrite'      => array(
+					'slug' => 'commands',
+				),
 			)
 		);
 	}
