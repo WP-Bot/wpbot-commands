@@ -12,6 +12,7 @@ class WPBot_Commands {
 	}
 
 	function add_post_type() {
+		// Dynamic commands.
 		register_post_type(
 			'wpbot_commands',
 			array(
@@ -25,6 +26,23 @@ class WPBot_Commands {
 				'menu_icon'    => 'dashicons-leftright',
 				'rewrite'      => array(
 					'slug' => 'commands',
+				),
+			)
+		);
+		
+		// Hardcoded commands.
+		register_post_type(
+			'wpbot_hc_commands',
+			array(
+				'labels'       => array(
+					'name'          => __( 'Hardcoded Commands', 'wpbot-commands' ),
+					'singular_name' => __( 'Command', 'wpbot-commands' ),
+				),
+				'public' => true,
+				'has_archive'  => true,
+				'show_in_rest' => true,
+				'rewrite'      => array(
+					'slug' => 'commands/manual',
 				),
 			)
 		);
