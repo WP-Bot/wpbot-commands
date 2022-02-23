@@ -3,7 +3,7 @@
 A WordPress plugin for maintaining commands used by the WordPress IRC bot; WPBot.
 
 ## See it in action
-The bot runs in the [#WordPress IRC channel on Freenode](https://webchat.freenode.net/?channels=#wordpress)
+The bot runs in the [#WordPress IRC channel on Libera.Chat](https://web.libera.chat/#wordpress)
 
 ## How it works
 The commands are part of a [Custom Post Type](https://developer.wordpress.org/plugins/post-types/), 
